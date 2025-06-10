@@ -26,6 +26,7 @@ Given more time, here are some ideas for improving the application:
     Add health checks and Prometheus metrics
     Deploy to cloud (e.g., Azure App Service or containerized via Docker)
     Use Redis for distributed caching in production
+    Write logs to cloud provider
     Generally, caching for 1 minute may not be an ideal solution under constant load, as it would trigger 
        around 200 requests every minute. In reality, changes in the Hacker News API likely occur much less frequently.
        A better approach would be to subscribe to changes and update the cache only when necessary.
